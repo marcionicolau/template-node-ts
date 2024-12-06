@@ -3,10 +3,8 @@
 echo -e "\nStarting post create command script..."
 echo "Dev machine:"
 uname -a
-echo -e "\nInstalling biome..."
-sudo chown node node_modules
-npm install --save-dev --save-exact @biomejs/biome 
-sudo apt update
+
+ git config --global core.autocrlf input
 
 omz update
 omz plugin load gh npm git-prompt themes python node github pre-commit
@@ -23,7 +21,7 @@ omz theme set spaceship
 mkdir -p ~/.config
 cp .devcontainer/spaceship.zsh ~/.config/spaceship.zsh
 
-bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+bash -c "$(echo "N" | curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 omz reload 
 
