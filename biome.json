@@ -30,7 +30,7 @@
 			"jsxQuoteStyle": "double",
 			"arrowParentheses": "always",
 			"bracketSpacing": true,
-			"trailingComma": "all",
+			"trailingCommas": "all",
 			"attributePosition": "auto",
 			"bracketSameLine": true
 		}
